@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.body{
+  background-color:rgb(24, 25, 26);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.midBody{
+  max-width: 700px;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  padding: 0%;
+  margin: 0%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body nav{
+  display: flex;
+  justify-content:space-between;
+  padding: 4%;
+  background-color: rgb(24, 25, 26);
+}
+.body nav .text{
+  display: flex;
+  gap: 10px;
+}
+.body nav a{
+  text-decoration: none;
+}
+.downarea{
+  bottom: 2%;
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  background-color:  rgb(24, 25, 26);
+  border-radius: 10px;
+}
+.downarea input{
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 40vh;
+  height: 2vh;
+  padding: 1.5vh;
+  margin: 1vh;
+}
+.downarea button{
+  color: black;
+  width: 20vh;
+  left: 20%;
+  transform: translateX(60%);
+  border: none;
+  padding: 1vh;
+}
+.downarea button:hover{
+  background-color: rgb(172, 172, 172);
+}
+.msgarea{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(20, 20, 20);
+  overflow:auto;
 }
-
-.App-link {
-  color: #61dafb;
+.msgarea p{
+  margin-inline: 2vh;
+  padding: 2vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr{
+  width: 60%;
+  opacity: 40%;
 }
